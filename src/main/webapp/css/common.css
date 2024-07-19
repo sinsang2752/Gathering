@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.gray {
+	color: lightgray;
+}
+
+.btnClose {
+	display:inline-block;
+	border: none;
+	background-color: transparent;
+} 
+.btnClose:after {
+	display: inline-block;
+	content: "\00d7";
+	font-size: 35px;
+	font-weight: bold;
+	color: gray;
+	cursor: pointer;
+}
+
+.red {
+	color: red;
+}

@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+#subGathArea hr {
+	border: 9px solid #f3f3f3;
+}
+
+#gathContainer {
+	height: 550px;
+	overflow-y: scroll;
+	padding-left: 5px;
+}
+
+.gathList img{
+	width: 130px;
+    height: 130px;
+    border-radius: 40px;
+}
+
+#cateTitle {
+	font-size: 35px;
+    margin: 26px 0px 25px 14px;
+	
+}
+
+#cateTitle span{
+	color: red;
+}
+
+#createGathArea {
+	position: absolute;
+	bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#createGathArea button {
+	font-size: 30px;
+    padding: 17px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: white;
+    color: #f9a9a9;
+    border: 3px solid #f9a9a9;
+    border-bottom-width: 6px;
+    
+}
+
+.gathList {
+	display: flex;
+    align-items: center;
+    width: 97%;
+    border-radius: 42px;
+    padding: 5px;
+    background: #7fbdff29;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.gathList>div {
+	margin-left: 10px;
+	position: relative;
+    height: 125px;
+    width: 100%;
+}
+
+.subGathTitle {
+	font-size: 30px;
+	position: absolute;
+	top: 0;
+}
+
+.subGathContent {
+	font-size: 20px;
+	position: absolute;
+	top: 43px;
+}
+
+.subGathInfo {
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+}
+
+.subCateSpan {
+	border-radius: 20px;
+    padding: 5px 10px;
+    background: #80808026;
+    margin-right: 5px;
+}
+
+.subGathMemCnt {
+	color: #f14f43;
+}
+
+#gathContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.c_modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+.c_modal.show {
+	display: block;
+}
+
+.c_modal_body {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 350px;
+	height: 380px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+	transform: translateX(-50%) translateY(-60%);
+}
+
+#createImgFile {
+  display: none;
+}
+
+#createImgArea .imgLabel {
+	display: inline-block;
+    vertical-align: top;
+    width: 170px;
+}
+
+#createImgArea {
+	height: 130px;
+}
+
+#createImgArea input {
+	width: 180px;
+}
+
+.gathImagewrapper {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 260px;
+    opacity: 90%;
+}
+
+.gathImagewrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#subGathTitleArea{
+	margin: 3% 0;
+	padding-left: 10px;
+}
+
+#subGathTitleArea p {
+	font-size: 50px;
+	margin: 0;
+}
+
+#subGathIntroArea {
+	margin-bottom: 50px;
+	padding-left: 10px;
+}
+
+#subGathIntroArea span {
+	font-size: 25px;
+}
+
+#subGathMeetArea>p {
+	font-size: 35px;
+	padding-left: 10px;
+}
+
+#subGathMeetArea>p>button {
+	float: right;
+    margin-right: 16px;
+    color: white;
+    padding: 10px 19px;
+    border: none;
+    border-bottom-color: rgba(0, 0, 0, 0.34);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 0 2px 0 -1px rgba(0,0,0,0.13), 0 3px 0 -1px rgba(0,0,0,0.08), 0 3px 13px -1px rgba(0,0,0,0.21);
+    border-radius: 10px;
+    background-color: #f9a9a9;
+    font-size: 20px;
+}
+
+#subGathMeetArea>p>button:active {
+	top: 1px;
+  	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+  	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+  	position: relative;
+}
+
+.detailMeet p {
+	margin: 0;
+}
+
+#subGathArea {
+	overflow-y: scroll;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+#subGathArea::-webkit-scrollbar {
+	display:none;
+}
+
+.detailMeet>div {
+	display: flex;
+    align-items: center;
+}
+
+.detailMeet>div>img {
+	height: 180px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+#memListArea{
+	margin-bottom: 80px;
+	padding-left: 10px;
+}
+
+#memListArea>p {
+	font-size: 30px;
+}
+
+#memList>p {
+	display: flex;
+    align-items: center;
+}
+
+#memList>p>img {
+	width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+#memList>p>span {
+	margin-left: 10px;
+    font-size: 30px;
+}
+
+.detailMeet {
+	position: relative;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 93%;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 10px 30px 10px;
+}
+
+.meetInfoArea p{
+	font-size:25px;
+	padding: 6px 0 0 10px;
+}
+
+
+.detailMeet>p {
+	font-size: 35px;
+	margin-bottom: 15px;
+}
+
+.meetTitle {
+	margin: 5px 0;
+}
+
+.joinGathBtn {
+	position: absolute;
+    font-size: 25px;
+    bottom: 20px;
+    left: 41%;
+    border: 0;
+    padding: 15px 25px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: #7fccde;
+    box-shadow: 0px 4px 0px #73B9C9;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#meetCreateImgFile {
+  display: none;
+}
+
+.met_modal_body {
+	position: absolute;
+    top: 53%;
+    left: 50%;
+    width: 350px;
+    height: 590px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+    transform: translateX(-50%) translateY(-60%);
+}
+
+.btn-two {
+    right: 10px;
+    border-radius: 10px;
+    top: 8px;
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    padding: 6px 25px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom-color: rgba(0, 0, 0, 0.34);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 0 2px 0 -1px rgba(0,0,0,0.13), 0 3px 0 -1px rgba(0,0,0,0.08), 0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+.attBtn {
+	background: #b3d4f5;
+}
+.notAttBtn {
+	background: #fd8989;
+}
